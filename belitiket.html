@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beli Tiket</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            background-color:  #b5fffa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        
+        .form-container {
+            width: 400px; 
+            padding: 40px 50px;
+            background-color: #fff8f8; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .form-label {
+            color: #555;
+            font-size: 1em;
+            width: 120px; 
+            text-align: left;
+        }
+
+        
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px; 
+            box-sizing: border-box;
+            background-color: white; 
+            border: none; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
+        }
+
+        
+        .input-wrapper {
+            flex-grow: 1; 
+        }
+
+        
+        .kirim-button {
+            display: block;
+            width: 80%; 
+            padding: 15px;
+            margin: 30px auto 0 auto; 
+            border: none;
+            background-color: #000000; 
+            color: #ffffff;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 30px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .kirim-button:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Beli tiket</h2>
+
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label for="nama_acara" class="form-label">Nama acara</label>
+                <div class="input-wrapper">
+                    <input type="text" id="nama_acara" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="deskripsi" class="form-label">Deskripsi</label>
+                <div class="input-wrapper">
+                    <input type="text" id="deskripsi" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal" class="form-label">Tanggal acara</label>
+                <div class="input-wrapper">
+                    <input type="date" id="tanggal" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telpon" class="form-label">No telpon</label>
+                <div class="input-wrapper">
+                    <input type="tel" id="telpon" class="form-input">
+                </div>
+            </div>
+
+            <button type="submit" class="kirim-button">KIRIM</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Tiket</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            background-color: #b5fffa; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 400px;
+            padding: 40px 50px;
+            background-color: #fff9f8; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            color: #555;
+            font-size: 1em;
+            width: 150px; 
+        }
+
+        
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: white; 
+        }
+
+        
+        .input-wrapper {
+            flex-grow: 1; 
+        }
+
+    
+        .konfirmasi-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            border: none;
+            background-color: #00c4de; 
+            color: #000000;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 30px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .konfirmasi-button:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="form-container">
+        <h2>Konfirmasi tiket</h2>
+
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label for="invoice" class="form-label">No invoice</label>
+                <div class="input-wrapper">
+                    <input type="text" id="invoice" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="total" class="form-label">Total bayar</label>
+                <div class="input-wrapper">
+                    <input type="text" id="total" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pengirim" class="form-label">Nama pengirim</label>
+                <div class="input-wrapper">
+                    <input type="text" id="pengirim" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bank_pengirim" class="form-label">Bank pengirim</label>
+                <div class="input-wrapper">
+                    <input type="text" id="bank_pengirim" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bank_tujuan" class="form-label">Bank tujuan</label>
+                <div class="input-wrapper">
+                    <input type="text" id="bank_tujuan" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bukti" class="form-label">Bukti pembayaran</label>
+                <div class="input-wrapper">
+                    <input type="file" id="bukti" class="form-input" style="padding-top: 5px;">
+                </div>
+            </div>
+
+            <button type="submit" class="konfirmasi-button">KONFIRMASI</button>
+        </form>
+    </div>
+
+</body>
+</html>
